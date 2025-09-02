@@ -69,3 +69,11 @@ for t in "${TENANTS[@]}"; do
 done
 
 echo "Estrutura de pastas e arquivos vazios com multitenant criada com sucesso!"
+
+
+
+npm install @mui/material @emotion/react @emotion/styled
+npm install react-is@18.3.1
+npm install @mui/material @mui/styled-engine-sc styled-components
+npm install @fontsource/roboto
+npm install @mui/icons-material
