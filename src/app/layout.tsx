@@ -1,24 +1,21 @@
-// src/app/layout.tsx
-'use client'; // no topo do arquivo
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import React from 'react';
+ import '@/app/styles/globals.css'; // caminho relativo
+import { Providers } from './providers';
 
-const theme = createTheme({
-  palette: {
-    primary: { main: '#1976d2' },
-    secondary: { main: '#dc004e' },
-  },
-});
+ 
+export const metadata = {
+  title: 'JS Digital SaaS',
+  description: 'Plataforma SaaS Multi-Tenant',
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          {children}
-        </ThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

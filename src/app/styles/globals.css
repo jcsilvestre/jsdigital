@@ -23,6 +23,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* Teste de CSS global */
+body {
+  background-color: hotpink; /* fundo rosa choque */
+  color: lime;               /* texto verde neon */
+}
+
+header {
+  border: 5px solid red;     /* borda vermelha no header */
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+}
+
 
 * {
   box-sizing: border-box;
